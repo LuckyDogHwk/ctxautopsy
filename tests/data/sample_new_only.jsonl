@@ -1,0 +1,12 @@
+{"type":"user","sessionId":"sess-1","cwd":"/home/u/proj","message":{"role":"user","content":[{"type":"text","text":"你好，帮我写一个函数"}]},"uuid":"u1","isMeta":false}
+{"type":"queue-operation","sessionId":"sess-1","operation":"queue","uuid":"q1"}
+{"type":"assistant","sessionId":"sess-1","message":{"id":"m1","model":"claude-sonnet-5-5","content":[{"type":"thinking","thinking":"let me think about this","signature":"s1"},{"type":"text","text":"好的"}],"usage":{"input_tokens":25000,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":100,"cache_creation":{"ephemeral_5m_input_tokens":0,"ephemeral_1h_input_tokens":0}}},"uuid":"u2"}
+{"type":"user","sessionId":"sess-1","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"call_1","content":"result text here"}]},"uuid":"u3"}
+{"type":"assistant","sessionId":"sess-1","message":{"id":"m2","model":"claude-sonnet-5-5","content":[{"type":"tool_use","id":"call_1","name":"Bash","input":{"command":"ls"}}],"usage":{"input_tokens":150,"cache_read_input_tokens":26000,"output_tokens":200,"cache_creation":{"ephemeral_5m_input_tokens":1000,"ephemeral_1h_input_tokens":500}}},"uuid":"u4"}
+{"type":"user","sessionId":"sess-1","isMeta":true,"message":{"role":"user","content":"<task-notification>meta noise</task-notification>"},"uuid":"u5"}
+{"type":"user","sessionId":"sess-1","isCompactSummary":true,"message":{"role":"user","content":[{"type":"text","text":"This session is being continued from a previous conversation"}]},"uuid":"u6"}
+{"type":"summary","sessionId":"sess-1","summary":"some old summary","leafUuid":"u4"}
+{"type":"progress","sessionId":"sess-1","progress":"loading"}
+{"type":"attachment","sessionId":"sess-1","attachment":{},"uuid":"u7"}
+{"type":"cost-state","sessionId":"sess-1","totalCostUSD":0.123,"modelUsage":{},"hasUnknownModelCost":false}
+not-a-json-line

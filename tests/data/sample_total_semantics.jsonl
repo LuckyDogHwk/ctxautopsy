@@ -1,0 +1,2 @@
+{"type":"user","sessionId":"sess-2","message":{"role":"user","content":[{"type":"text","text":"hello world"}]},"uuid":"u1"}
+{"type":"assistant","sessionId":"sess-2","message":{"id":"m9","model":"m-x","content":[],"usage":{"input_tokens":28000,"cache_read_input_tokens":26000,"cache_creation_input_tokens":1500,"output_tokens":50}},"uuid":"u2"}

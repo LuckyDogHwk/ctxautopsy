@@ -1,0 +1,2 @@
+{"type":"user","sessionId":"sess-3","message":{"role":"user","content":[{"type":"text","text":"old log"}]},"uuid":"u1"}
+{"type":"assistant","sessionId":"sess-3","message":{"id":"m10","model":"old-model","content":[{"type":"text","text":"ok"}],"usage":{"input_tokens":100,"output_tokens":50}},"uuid":"u2"}

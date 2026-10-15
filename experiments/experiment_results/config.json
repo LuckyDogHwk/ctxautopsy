@@ -1,0 +1,57 @@
+{
+  "tasks": [
+    "t_short",
+    "t_tool_heavy",
+    "t_numeric"
+  ],
+  "strategies": [
+    {
+      "name": "baseline",
+      "params": {}
+    },
+    {
+      "name": "truncate_head",
+      "params": {
+        "keep_ratio": 0.5
+      }
+    },
+    {
+      "name": "sliding_window",
+      "params": {
+        "max_tokens": 200
+      }
+    },
+    {
+      "name": "freq_drop",
+      "params": {
+        "mode": "stopwords",
+        "top_ratio": 0.2
+      }
+    },
+    {
+      "name": "rule_summary",
+      "params": {
+        "min_chars": 120,
+        "apply_to": [
+          "tool_result"
+        ]
+      }
+    }
+  ],
+  "repeats": 3,
+  "compress_from_turn": 3,
+  "every_turn": false,
+  "cache": {
+    "chars_per_token": 4.0,
+    "breakpoint_tokens": 1024,
+    "min_cache_tokens": 1024,
+    "resident_cached_after_turn": 1,
+    "compression_breaks_prefix": true,
+    "re_cache_after_compress": true,
+    "multi_breakpoint": false,
+    "compress_resident": false
+  },
+  "include_replay_cost": false,
+  "output_dir": "experiments/experiment_results",
+  "price_model": "deepseek-v4-flash"
+}
